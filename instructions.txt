@@ -1,0 +1,79 @@
+MODEL: https://huggingface.co/DavidAU/Gemma-The-Writer-9B-GGUF
+
+
+Gemma-The-Writer-9B-GGUF
+
+This is a Gemma2 model merge of the top storytelling / writing models as noted at EQBench, tuned specifically for fiction, story, and writing.
+
+Due to high stability and compressed nature of the model you can also use it for general use too, including roleplay.
+
+This model requires GEMMA Instruct template, and has 8k context window but is extendable via rope to 32k or higher.
+
+Recommended Rep Pen of 1.05 or higher, temp range 0-5.
+
+Example outputs below.
+
+
+llm_load_print_meta: model type       = 9B
+llm_load_print_meta: model ftype      = Q3_K - Small
+llm_load_print_meta: model params     = 9.24 B
+llm_load_print_meta: model size       = 4.03 GiB (3.75 BPW)
+llm_load_print_meta: general.name     = GemmaTheWriter
+llm_load_print_meta: BOS token        = 2 '<bos>'
+llm_load_print_meta: EOS token        = 1 '<eos>'
+llm_load_print_meta: UNK token        = 3 '<unk>'
+llm_load_print_meta: PAD token        = 0 '<pad>'
+llm_load_print_meta: LF token         = 227 '<0x0A>'
+llm_load_print_meta: EOT token        = 107 '<end_of_turn>'
+
+
+
+examples
+Example #1 at q8, Temp:1
+Science Fiction: The Last Transmission - Write a story that takes place entirely within a spaceship's cockpit as the sole surviving crew member attempts to send a final message back to Earth before the ship's power runs out. The story should explore themes of isolation, sacrifice, and the importance of human connection in the face of adversity. 800-1000 words.
+
+Example #2, Q8, rep pen 1.05, Temp:1
+In the style of Ernest Hemingway: Write a scene in a larger story about a soldier returning home from war. The scene is set in a bar. It should carry the jadedness of a seasoned combatant but with a wry humour. Write in Heminway's voice, naturally: Use short, declarative sentences and simple, straightforward language. Include dialogue that is terse and revealing of character. Write with a keen sense of time and place. Capture realness and authenticity. 800-1000 words, past tense.
+
+Example #3 at q4km, Temp:1
+Start a 1000 word scene (vivid horror, 1st person, present tense, include thoughts) with: The sky scraper swayed, as she watched the window in front of her on the 21 floor explode...
+
+Example #4, Rep pen 1.1, Temp 1, Q8
+Epistolary Apocalyptic Survival: Write a story set in a post-apocalyptic world, told through a series of letters or messages left behind by survivors. The story should chronicle the challenges and triumphs of two small groups of survivors as they navigate the dangers of this new world and seek to rebuild their lives. The groups communicate through letters left in a drop box. The story proceeds as a new settlement is discovered. They are approached, and initially given entry on the ostensible promise of a trade deal, but things go sideways. Create distinct characters and write in their voice. The story will be set in New Zealand 30 years after a civilisational collapse. 800-1000 words.
+
+
+
+Example #1 at q8, Temp:1
+ASSISTANT> The red emergency lights pulsed like dying embers, casting long, grotesque shadows across Captain Elara Vance’s worn features. Her reflection, gaunt and haunted, stared back from the scratched transparisteel viewport, a grim testament to the desolate reality outside - an unending abyss of black velvet studded with indifferent stars.
+
+
+She ran a trembling hand through her tangled hair, its once vibrant auburn now dulled by despair and cosmic dust. The hum of failing life support was a mournful dirge, echoing the dying heartbeat of their vessel, the Icarus. A mere sliver of power remained, enough for one last transmission, a final desperate plea carried on the wings of radio waves back to Earth – her Earth.
+
+Three days ago, an EMP storm had ripped through them, turning the once humming marvel of interstellar engineering into a tomb adrift. Her crew, vibrant souls who had laughed at comet showers and toasted victories over rogue asteroids just weeks before, were now silent memories etched in her grief-stricken mind. The icy grip of solitude had tightened around her ever since, each passing hour an agonizing countdown to oblivion.
+
+She looked down at the console, its familiar layout a bittersweet comfort. Years spent mastering this symphony of circuits and controls had culminated in this –  her final performance as conductor of hope. On the flickering screen, the message editor blinked insistently, beckoning her with hollow promises. Words danced on her mental canvas, yearning to be unleashed, but they refused to coalesce into anything coherent amidst the storm raging within her.
+
+Was it arrogance or naiveté that had led them to believe human resilience could conquer even the vast indifference of space?  They’d been so sure – pioneers charting new frontiers, ambassadors of a species striving for the stars. Now, she was left with the bitter truth: humanity's reach often outpaced its grasp.
+
+Elara clenched her jaw, pushing down the rising tide of despair. This wasn't just about her anymore; it was about them –  her crew, their families back on Earth who would never know what became of them. Their sacrifice wouldn’t be in vain if she could carry a sliver of their story back home.
+
+She began typing, each keystroke a battle against the encroaching silence. “This is Captain Elara Vance… Icarus… last transmission…” The words felt hollow, inadequate against the immensity of her loss. But she pressed on, weaving in fragments of their shared dreams –  the first terraforming attempt on Proxima b, Dr. Chen’s infectious laughter during a simulated Martian storm, Liam's quiet poetry read under starlight filters. Each memory, a brushstroke painting a portrait of hope against the backdrop of tragedy.
+
+Hours bled into agonizing minutes as she poured her soul onto the digital canvas. The console hummed with strained energy, mirroring the tremor in her heart.  With each dwindling byte, she felt a pang of guilt – was this enough? Would it pierce the cosmic veil and reach the expectant faces on Earth?
+
+Finally, the last words were typed: "We explored the universe, but found our greatest treasure within ourselves… remember us… remember hope.” She sent the transmission, her fingers lingering on the console as a final echo of their journey resonated through the empty ship. The lights flickered once more, then died, plunging the Icarus into an absolute silence that was both terrifying and strangely comforting –  a universal lullaby bidding farewell.
+
+Elara leaned back against her chair, eyes fixed on the star-dusted void outside. A single tear rolled down her cheek, tracing a path through dust and grime. It wasn’t just about reaching Earth; it was about preserving their legacy, keeping their spirit alive even as the physical vessel crumbled around them. In that final transmission, in that whispered echo of hope carried on the currents of space, she had fulfilled her promise – not to return victorious, but to ensure they were never forgotten.
+
+
+The last captain of Icarus, adrift among stars, found solace in the bittersweet knowledge that even in oblivion, their story would live on.
+
+---
+Prompt Tokens: 70
+Output Tokens: 895
+TOTAL Tokens: 965
+---
+>>>Inference speed: 1.640  t/s
+>>>Generation speed: 1.521  t/s
+
+
